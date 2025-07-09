@@ -78,6 +78,11 @@ class InfusionsoftService
     {
         $token = InfusionsoftToken::first();
 
+        if (!$token) {
+            // User never authorized the app
+            abort(403, 'Infusionsoft is not connected. Please complete the OAuth authorization.');
+        }
+
         if (!$token || Carbon::now()->gte($token->expires_at)) {
             return $this->refreshToken();
         }
