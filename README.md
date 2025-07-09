@@ -97,7 +97,7 @@ http://127.0.0.1:8000/contacts
 ## 📦 API Used
 
 - [Infusionsoft REST API](https://developer.infusionsoft.com/docs/rest/)
-- [OAuth2 Authentication](https://developer.infusionsoft.com/docs/rest/#section/Authentication)
+- [OAuth2 Authentication](https://developer.infusionsoft.com/getting-started-oauth-keys/)
 - [Guzzle HTTP Client](https://docs.guzzlephp.org/en/stable/)
 
 
